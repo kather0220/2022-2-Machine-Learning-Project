@@ -1,6 +1,49 @@
 # 💻2022-2-Machine-Learning-Project💻
 2022-2 Machine Learning Project ( Team Crong )
 
+## 1. Problem Statement
+### 1-1. Problem Definition
+![image](https://user-images.githubusercontent.com/78165538/208300424-e75a7501-2a45-45d2-b645-357763577883.png)
+
+We noticed the main cause of medication errors as medical staff’s mistake. To prevent such accidents, we decided to apply a model that prescribes medications that are appropriate for a specific patient.
+
+### 1-2. Project Outline
+![image](https://user-images.githubusercontent.com/78165538/208300440-9a4c73d6-0098-4eb6-b4c2-6ed5c93eb6bb.png)
+
+## 2. Chosen Model
+![image](https://user-images.githubusercontent.com/78165538/208300467-de763799-1220-4ba2-a09e-93eaba5075cc.png)
+
+To examine the highest accuracy, we compared 4 candidates, including decision tree, random forest, svm, and naïve bayes.
+
+![image](https://user-images.githubusercontent.com/78165538/208300525-46b7ccad-914a-4823-8d02-2501c71e95de.png)
+
+This graph shows training and testing scores. We finally chose random forest because it showed the highest accuracy.
+
+### 2-1. Chose Hyper Parameters
+![image](https://user-images.githubusercontent.com/78165538/208300579-5b08cd9f-187e-400d-a60a-997ccb3dd640.png)
+
+At first, we used given representative parameters as default values, and tuned them later on at the hyperparameter tuning process referring to the model performance.
+
+## 3. Experimental Setting 
+### 3-1. Dataset Settings
+![image](https://user-images.githubusercontent.com/78165538/208300800-3276831f-633a-45fe-a76b-b0c44a2936da.png)
+
+There are five input features, and the outputs are classified into 5 different types. The dataset size is 200, and we used 5-fold cross validation  for more efficient use of data.
+
+### 3-2. Data Categorization & Splitting the Dataset
+![image](https://user-images.githubusercontent.com/78165538/208300901-1fad984c-8484-4418-b2ad-e72eaff57a2a.png)
+
+For more efficient learning, we categorized the features ourselves. Age and Na_to_K are categorized by the range as shown, and others are set as binary as we can see in the result. The dataset was split into 70% of train set and 30% of test set.
+
+### 3-3. Smote Technique
+![image](https://user-images.githubusercontent.com/78165538/208301065-2ed15a30-64bd-46cd-8fdb-1b72d495e767.png)
+
+A problem of our dataset is that the number of drugY cases was too many. To avoid overfitting, we applied smote technique. By applying smote technique, we can conduct oversampling for our dataset.
+
+### 3-4. Resource
+![image](https://user-images.githubusercontent.com/78165538/208301096-b8fccdb3-c871-40e1-9759-9e4f57b87e77.png)
+
+The cpu and memory was normal size, and for our project, the resource was enough.
 
 ## 4. Results
 ### 4-1. Hyperparameter tuning
@@ -12,7 +55,7 @@ After tuning, we get best parameters and best accuracy.
 
 ![image](https://user-images.githubusercontent.com/76741915/208284566-56e9ecc2-927f-4479-91e7-98c4a992f07b.png)
 
-The accuracy of our model with best parameters is about 0.902. The initial accuracy of the model is about 0.879. Therefore, after hyperparameter tuning, we can get the better model.
+The accuracy of our model with best parameters is about 0.91. The initial accuracy of the model is about 0.879. Therefore, after hyperparameter tuning, we can get the better model.
 
 ### 4-2. Compare the results before & after hyperparameter tuning
 Now, let’s compare the results before and after hyperparameter tuning.
