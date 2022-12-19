@@ -1,6 +1,15 @@
 # 💻2022-2-Machine-Learning-Project💻
 2022-2 Machine Learning Project ( Team Crong )
 
+## 0. Instruction
+✅ We wrote the code on Google Colab. Here is our Colab notebook.
+
+https://colab.research.google.com/drive/1zJUm-ulgHRSWLjiItuUfvvxZxjyxWD3K?usp=sharing
+
+✅ You can reproduce our code in this notebook.
+
+✅ Each time the runtime is restarted, the value of performance metric may change.
+
 ## 1. Problem Statement
 ### 1-1. Problem Definition
 ![image](https://user-images.githubusercontent.com/78165538/208300424-e75a7501-2a45-45d2-b645-357763577883.png)
